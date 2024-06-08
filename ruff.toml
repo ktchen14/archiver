@@ -1,0 +1,55 @@
+line-length = 80
+target-version = "py311"
+
+[lint]
+select = [
+  "F", "E", "W", "I", "N", "UP", "BLE", "B", "C4", "DTZ", "T10", "ISC", "LOG",
+  "G", "PIE", "T20", "PT", "Q", "RSE", "RET", "SLF", "SLOT", "SIM", "TID",
+  "TCH", "PL", "TRY", "FLY", "PERF", "RUF"
+]
+
+ignore = [
+  "B023",     # Function definition does not bind loop variable `socket`. This
+              # is fine.
+
+  "N805",     # First argument of a method should be named self. Doesn't handle
+              # SQLAlchemy hybrid_method/hybrid_property.
+
+  "PLW2901",  # `for` loop variable `name` overwritten by assignment target.
+              # This is fine; mypy will detect a dangerous case of this.
+
+  "PT004",    # Fixture {function} does not return anything, add leading
+              # underscore. This doesn't seem to be a convention.
+
+  "RET503",   # Missing explicit `return` at the end of function able to return
+              # non-`None` value. More confusing in a Flask decorator.
+
+  "RUF012",   # Mutable class attributes should be annotated with
+              # typing.ClassVar. Overlay simplistic, e.g. doesn't handle Factory
+              # Boy, doesn't handle __mapper_args__, etc.
+
+  "UP007",    # Use `X | Y` for type annotations. typing.Optional is better.
+]
+
+unfixable = [
+  "E711",     # Comparison to None should be cond is None. Likely to break
+              # SQLAlchemy code.
+  "E712",     # Comparison to True should be cond is True or if cond:. Likely to
+              # break SQLAlchemy code.
+]
+
+[lint.flake8-pytest-style]
+fixture-parentheses = false
+mark-parentheses = false
+
+[lint.flake8-type-checking]
+runtime-evaluated-base-classes = [
+  "pydantic.BaseModel",
+  "sqlalchemy.orm.DeclarativeBase",
+  "archiver.core.Record",
+  "archiver.resource.Resource",
+]
+
+[lint.isort]
+known-first-party = ["archiver"]
+no-lines-before = ["standard-library"]

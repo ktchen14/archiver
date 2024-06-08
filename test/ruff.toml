@@ -1,0 +1,7 @@
+extend = "../ruff.toml"
+
+[lint]
+extend-ignore = [
+  "PLR2004",  # Magic value used in comparison, consider replacing {value} with
+              # a constant variable.
+]

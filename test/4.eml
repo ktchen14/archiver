@@ -1,0 +1,24 @@
+Date: Mon, 10 Jun 2024 08:00:00 -0400
+From: Sample User 1 <sample-user-1@kaimel.io>
+Message-ID: <39669c1f-692f-467c-a0cd-f51a13e1fe12@kaimel.io>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="0000000000009fe1bd061a8a7be5"
+
+--0000000000009fe1bd061a8a7be5
+Content-Type: text/plain; charset="UTF-8"
+
+This is some *sample* text
+
+--0000000000009fe1bd061a8a7be5
+Content-Type: application/octet-stream; name="sample.diff"
+Content-Disposition: attachment; filename="sample.diff"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_lx93utvq0
+Content-ID: <f_lx93utvq0>
+
+Y29tbWl0IDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAKQXV0aG9yOiBT
+YW1wbGUgVXNlciAxIDxzYW1wbGUtdXNlci0xQGthaW1lbC5pbz4KRGF0ZTogICBNb24gSnVuIDEw
+IDA4OjAwOjAwIDIwMjQgLTA0MDAKCiAgICBTYW1wbGUgY2hhbmdlCgpkaWZmIC0tZ2l0IGEvdGVz
+dC9zYW1wbGUgYi90ZXN0L3NhbXBsZQppbmRleCA3ODk4MTkyLi42MTc4MDc5IDEwMDY0NAotLS0g
+YS90ZXN0L3NhbXBsZQorKysgYi90ZXN0L3NhbXBsZQpAQCAtMSArMSBAQAotYQorYgo=
+--0000000000009fe1bd061a8a7be5--

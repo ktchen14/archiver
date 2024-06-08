@@ -1,0 +1,49 @@
+Received: by mail.messagingengine.com (Postfix) with ESMTPA for
+ <pgsql-hackers@postgresql.org>; Mon, 10 Jun 2024 08:00:00 -0400 (EDT)
+Date: Mon, 10 Jun 2024 08:00:00 -0400
+From: Sample User 1 <sample-user-1@kaimel.io>,
+ Sample User 2 <sample-user-2@kaimel.io>
+Sender: Sample User 0 <sample-user-0@kaimel.io>
+Reply-To: pgsql-hackers <pgsql-hackers@postgresql.org>,
+ Additional: Sample User 3 <sample-user-3@kaimel.io>;
+To: pgsql-hackers <pgsql-hackers@postgresql.org>,
+ Sample User 4 <sample-user-4@kaimel.io>
+Cc: Sample User 5 <sample-user-5@kaimel.io>,
+ Additional: Sample User 6 <sample-user-6@kaimel.io>;
+Bcc: Sample User 7 <sample-user-7@kaimel.io>,
+ Additional: Sample User 8 <sample-user-8@kaimel.io>;
+Message-ID: <12b13e25-5ee2-471c-b78c-e3178668864d@kaimel.io>
+In-Reply-To: <1bd5f0e9-690d-47a2-bfca-d4c1dc78daf8@kaimel.io>
+ <b5634a34-5770-476b-bcdf-5d2551b1a94d@kaimel.io>
+References: <1bd5f0e9-690d-47a2-bfca-d4c1dc78daf8@kaimel.io>
+ <b5634a34-5770-476b-bcdf-5d2551b1a94d@kaimel.io>
+ <3a3b8895-fd56-4d0a-95e4-82efaaeb0fb2@kaimel.io>
+ <64431af8-9984-4eaf-a7fd-fcfd03ea114b@kaimel.io>
+Subject: =?UTF-8?Q?=20Test Message=20?=
+List-Id: <pgsql-hackers.lists.postgresql.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="0000000000000e915d061a87112e"
+
+--0000000000000e915d061a87112e
+Content-Type: multipart/alternative; boundary="0000000000000e915a061a87112c"
+
+--0000000000000e915a061a87112c
+Content-Type: text/plain; charset="UTF-8"
+
+This is some *sample* text
+
+--0000000000000e915a061a87112c
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">This is some <b>sample</b> text<br></div>
+
+--0000000000000e915a061a87112c--
+--0000000000000e915d061a87112e
+Content-Type: text/plain; charset="US-ASCII"; name="test-attachment.txt"
+Content-Disposition: attachment; filename="test-attachment.txt"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_lx8v4el50
+Content-ID: <f_lx8v4el50>
+
+VGhpcyBpcyBhIHRlc3QgYXR0YWNobWVudAo=
+--0000000000000e915d061a87112e--
